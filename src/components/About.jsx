@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Button from './Button';
-import AboutImg from '../assets/about-img.jpg';
+import React, { useEffect, useRef, useState } from "react";
+import Button from "./Button";
+import AboutImg from "../assets/about-img.jpg";
 
 const About = () => {
   const aboutSectionRef = useRef(null);
@@ -24,37 +24,37 @@ const About = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
     <section
       ref={aboutSectionRef}
-      name='about'
+      name="about"
       className={`py-20 scroll-pt-24 transition-opacity transition-transform duration-500 ease-in-out ${
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
+        inView ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
       }`}
     >
-      <div className='max-w-[1200px] mx-auto px-4'>
-        <div className='grid md:grid-cols-2 gap-10'>
+      <div className="max-w-[1200px] mx-auto px-4">
+        <div className="grid md:grid-cols-2 gap-10">
           <div>
-            <img src={AboutImg} className='w-full' alt='about us' />
+            <img src={AboutImg} className="w-full h-fit" alt="about us" />
           </div>
-          <div className='text-center md:text-left'>
-            <span className='text-blue text-lg'> About Us</span>
-            <h2 className='text-3xl md:text-4xl leading-10 text-black pt-2'>
+          <div className="text-center md:text-left">
+            <span className="text-blue text-lg"> About Us</span>
+            <h2 className="text-3xl md:text-4xl leading-10 text-black pt-2">
               True Healthcare For Your Family
             </h2>
-            <p className='py-5 leading-8 text-light-color'>
+            <p className="py-7 leading-8 text-light-color">
               Lorem, Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
               Laboriosam Cupiditate Vero In Provident Ducimus. Totam Quas Labore
               Mollitia Cum Nisi, Sint, Expedita Rem Error Ipsa, Nesciunt Ab
               Provident. Aperiam, Officiis!
             </p>
-            <Button text='make appointment' />
+            <Button text="Make Appointment" className="w-fit" />
           </div>
         </div>
       </div>

@@ -40,7 +40,9 @@ const ClientsItems = ({ clientsData }) => {
               className="rounded-full h-24 w-24 mx-auto"
               alt=""
             />
-            <p className="leading-8 text-light-color py-5">{client.desc}</p>
+            <p className="leading-normal text-light-color py-5">
+              {client.desc}
+            </p>
             <div className="bg-light-bg inline-block px-4 py-1 space-x-1 rounded mb-4">
               <StarIcons type={faStar} />
               <StarIcons type={faStar} />

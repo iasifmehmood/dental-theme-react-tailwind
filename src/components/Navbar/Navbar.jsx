@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import NavLinks from './NavLinks';
+import React, { useState, useEffect } from "react";
+import NavLinks from "./NavLinks";
 // react scroll
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 // fontawesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 // button component
-import Button from '../Button';
+import Button from "../Button";
 // // NavLink Data
-import { navLinksData } from '../../data/data';
-import ResponsiveMenu from './ResponsiveMenu';
-import NavHead from './NavHead';
+import { navLinksData } from "../../data/data";
+import ResponsiveMenu from "./ResponsiveMenu";
+import NavHead from "./NavHead";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [bg, setBg] = useState(false);
@@ -27,22 +27,22 @@ const Navbar = () => {
         setBg(false);
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   }, []);
   return (
     <header
       className={`fixed w-full left-0 top-0 z-10 duration-300 ${
-        bg ? 'bg-white shadow-md' : ''
+        bg ? "bg-white shadow-md" : "bg-white/50"
       }`}
     >
       <div>
         <NavHead />
-        <nav className='flex justify-between items-center max-w-[1200px] mx-auto px-5 h-16'>
+        <nav className="flex justify-between items-center max-w-[1200px] mx-auto px-5 h-16">
           <Link
-            to='home'
+            to="home"
             smooth={true}
             duration={500}
-            className='z-10 cursor-pointer'
+            className="z-10 cursor-pointer"
           >
             {/* <h1
               className={`text-2xl lg:text-3xl ${
@@ -50,11 +50,11 @@ const Navbar = () => {
               }`}
             > */}
             <h1 className={`text-2xl lg:text-3xl `}>
-              First Stop<span className='text-blue'> Dental</span>
+              First Stop<span className="text-blue"> Dental</span>
             </h1>
           </Link>
-          <div className='hidden md:flex'>
-            <ul className='flex space-x-8'>
+          <div className="hidden md:flex">
+            <ul className="flex space-x-8">
               {navLinksData.map((item, index) => (
                 <NavLinks item={item} key={index} handleNav={handleNav} />
               ))}
@@ -64,19 +64,19 @@ const Navbar = () => {
           {/* Hamburger icon */}
           <div
             className={`flex md:hidden cursor-pointer z-10 hover:text-blue ${
-              nav ? 'text-white' : 'text-black'
+              nav ? "text-white" : "text-black"
             }`}
             onClick={handleNav}
           >
             {nav ? (
               <FontAwesomeIcon
                 icon={faTimes}
-                className='text-3xl'
+                className="text-3xl"
               ></FontAwesomeIcon>
             ) : (
               <FontAwesomeIcon
                 icon={faBars}
-                className='text-3xl'
+                className="text-3xl"
               ></FontAwesomeIcon>
             )}
           </div>

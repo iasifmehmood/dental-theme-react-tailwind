@@ -12,7 +12,7 @@ const FooterItems = ({
         className="text-white bg-blue rounded-full text-3xl p-3"
       ></FontAwesomeIcon>
       <h3 className="text-black capitalize font-medium mt-3">{title}</h3>
-      <p className="text-light-color py-2">{Firstsubtitle}</p>
+      <p className="text-light-color pt-2 text-base">{Firstsubtitle}</p>
       {Secondsubtitle && <p className="text-light-color">{Secondsubtitle}</p>}
     </div>
   );
