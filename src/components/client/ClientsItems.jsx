@@ -1,13 +1,11 @@
-// fontawesome
-import { faStar, faStarHalfStroke } from "@fortawesome/free-solid-svg-icons";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/autoplay";
-import "swiper/css/navigation";
-import { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-// StarIcons
-import StarIcons from "./StarIcons";
+import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+import { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import StarIcons from './StarIcons';
+
 const ClientsItems = ({ clientsData }) => {
   return (
     <Swiper
@@ -34,26 +32,26 @@ const ClientsItems = ({ clientsData }) => {
     >
       {clientsData.map((client, index) => (
         <SwiperSlide key={index}>
-          <div className=" bg-white rounded p-4 text-center shadow-lg">
+          <div className='bg-white rounded p-4 text-center shadow-lg transform transition-transform hover:scale-105'>
             <img
               src={client.img}
-              className="rounded-full h-24 w-24 mx-auto"
-              alt=""
+              className='rounded-full h-24 w-24 mx-auto'
+              alt=''
             />
-            <p className="leading-normal text-light-color py-5">
+            <p className='leading-normal text-light-color py-5'>
               {client.desc}
             </p>
-            <div className="bg-light-bg inline-block px-4 py-1 space-x-1 rounded mb-4">
+            <div className='bg-light-bg inline-block px-4 py-1 space-x-1 rounded mb-4'>
               <StarIcons type={faStar} />
               <StarIcons type={faStar} />
               <StarIcons type={faStar} />
               <StarIcons type={faStar} />
               <StarIcons type={faStarHalfStroke} />
             </div>
-            <h3 className="capitalize text-black font-medium md:text-xl mb-1">
+            <h3 className='capitalize text-black font-medium md:text-xl mb-1'>
               {client.name}
             </h3>
-            <span className="capitalize text-light-color">{client.title}</span>
+            <span className='capitalize text-light-color'>{client.title}</span>
           </div>
         </SwiperSlide>
       ))}

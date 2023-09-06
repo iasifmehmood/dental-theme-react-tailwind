@@ -57,7 +57,12 @@ const Services = () => {
         <Heading title=' our services' />
         <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-5'>
           {servicesData.map((item, index) => (
-            <ServiceItems key={index} item={item} />
+            <div
+              key={index}
+              className='hover:scale-105 transform transition-transform'
+            >
+              <ServiceItems item={item} />
+            </div>
           ))}
         </div>
       </div>
