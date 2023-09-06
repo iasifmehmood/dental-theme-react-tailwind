@@ -30,6 +30,10 @@ export const navLinksData = [
     path: 'our-mission',
   },
   {
+    name: 'Team',
+    path: 'team',
+  },
+  {
     name: 'About',
     path: 'about',
   },
@@ -124,6 +128,28 @@ export const clientsData = [
     name: 'john deo',
     desc: 'The Cosmetic Dentistry services here have transformed my confidence. My smile has never looked better, and I am grateful for their expertise.',
     title: 'satisfied client',
+  },
+];
+
+//team data
+export const TeamData = [
+  {
+    img: Client1,
+    name: 'william',
+    desc: 'I could not be happier with my new smile after getting dental implants. The teams precision and care made the procedure a breeze',
+    title: 'Pediatric dentistry',
+  },
+  {
+    img: Client2,
+    name: 'jennifer',
+    desc: 'As a parent, I am relieved to have found a pediatric dentist who truly understands my childs needs. They have made each visit enjoyable and stress-free',
+    title: 'Periodontist',
+  },
+  {
+    img: Client3,
+    name: 'john deo',
+    desc: 'The Cosmetic Dentistry services here have transformed my confidence. My smile has never looked better, and I am grateful for their expertise.',
+    title: 'Cosmetic dentistry',
   },
 ];
 

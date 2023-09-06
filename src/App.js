@@ -8,11 +8,10 @@ import {
   Navbar,
   Process,
   Services,
+  Team,
+  Mission,
+  VideoGallery,
 } from './components';
-import Mission from './components/Mission';
-import VideoGallery from './components/Video-Gallery/VideoGallery';
-
-// import { Navbar, Home, About, Services, Process, Clients, Contact, Footer } from './components'
 
 function App() {
   return (
@@ -21,6 +20,7 @@ function App() {
       <Home />
       <Mission />
       <About />
+      <Team />
       <Services />
       <Process />
       <Clients />
