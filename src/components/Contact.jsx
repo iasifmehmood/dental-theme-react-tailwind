@@ -49,7 +49,7 @@ const Contact = () => {
     <section
       ref={contactSectionRef}
       name='contact'
-      className='py-20 transition-opacity transition-transform duration-500 ease-in-out opacity-0 -translate-y-20'
+      className='py-20 bg-light-bg transition-opacity transition-transform duration-500 ease-in-out opacity-0 -translate-y-20'
     >
       <div className='max-w-[1200px] mx-auto px-4'>
         <Heading title='make appointment' />

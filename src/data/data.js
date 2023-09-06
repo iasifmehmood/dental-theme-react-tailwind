@@ -38,6 +38,14 @@ export const navLinksData = [
     path: 'reviews',
   },
   {
+    name: 'Our Mission',
+    path: 'our-mission',
+  },
+  {
+    name: 'Video Gallery',
+    path: 'video-gallery',
+  },
+  {
     name: 'Contact',
     path: 'contact',
   },
