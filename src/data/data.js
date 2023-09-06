@@ -26,6 +26,10 @@ export const navLinksData = [
     path: 'home',
   },
   {
+    name: 'Our Mission',
+    path: 'our-mission',
+  },
+  {
     name: 'About',
     path: 'about',
   },
@@ -37,10 +41,7 @@ export const navLinksData = [
     name: 'Reviews',
     path: 'reviews',
   },
-  {
-    name: 'Our Mission',
-    path: 'our-mission',
-  },
+
   {
     name: 'Video Gallery',
     path: 'video-gallery',
