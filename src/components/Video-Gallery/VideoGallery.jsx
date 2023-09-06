@@ -51,17 +51,54 @@ const VideoGallery = () => {
       name='video-gallery'
       className='py-6 md:py-10 lg:py-16 bg-light-bg scroll-pt-10 md:scroll-pt-16 lg:scroll-pt-24 transition-opacity transition-transform duration-500 ease-in-out opacity-0 -translate-y-20'
     >
-      <div className='max-w-6xl mx-auto px-4'>
+      <div className='max-w-[900px] mx-auto px-4'>
         <Heading title='Video Gallery' center={true} />
-        <div className='text-center'>
-          <div className='relative overflow-hidden max-w-full'>
-            <div className='aspect-w-16 aspect-h-9'>
+        <div className='text-center flex flex-wrap justify-center'>
+          <div className='flex w-full md:w-1/2 lg:w-1/2 m-3'>
+            {/* Original Video */}
+            <div className='relative aspect-w-16 aspect-h-9'>
               {/* Embed a YouTube video */}
-              <iframe
-                className='w-full h-full'
+              {/* <iframe
+                width='853'
+                height='480'
                 src='https://www.youtube.com/embed/lw7xIB0kPCo'
                 title='Dental Ad Video Template (Editable)'
-              ></iframe>
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                allowFullScreen
+              ></iframe> */}
+              <video
+                autoPlay
+                loop
+                muted
+                controls
+                playsInline
+                className='top-0 left-0 w-full h-full object-cover'
+                style={{
+                  filter: 'brightness(75%)',
+                }}
+              >
+                <source src='/dentist2.mp4' type='video/mp4' />
+              </video>
+            </div>
+          </div>
+
+          <div className='flex w-full md:w-1/2 lg:w-1/2 m-3'>
+            {/* New Video */}
+            <div className='relative aspect-w-16 aspect-h-9'>
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                className='top-0 left-0 w-full h-full object-cover'
+                style={{
+                  filter: 'brightness(75%)',
+                }}
+              >
+                <source src='/dentist.mp4' type='video/mp4' />
+              </video>
             </div>
           </div>
         </div>
