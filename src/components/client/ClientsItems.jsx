@@ -17,7 +17,7 @@ const ClientsItems = ({ clientsData }) => {
       slidesPerView={3}
       loop={true}
       grabCursor={true}
-      autoplay={{ delay: 9000 }}
+      autoplay={{ delay: 2000 }}
       breakpoints={{
         0: {
           slidesPerView: 1,
