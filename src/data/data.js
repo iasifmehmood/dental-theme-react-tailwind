@@ -23,27 +23,28 @@ import {
 export const navLinksData = [
   {
     name: 'Home',
-    path: 'home',
+    path: '/',
   },
   {
     name: 'Our Mission',
-    path: 'our-mission',
-  },
-  {
-    name: 'Team',
-    path: 'team',
+    path: '/#mission',
   },
   {
     name: 'About',
-    path: 'about',
+    path: '/#about',
+  },
+
+  {
+    name: 'Team',
+    path: '/#team',
   },
   {
     name: 'Services',
-    path: 'services',
+    path: '/#service',
   },
   {
     name: 'Reviews',
-    path: 'reviews',
+    path: '/#review',
   },
 
   {

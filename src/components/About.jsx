@@ -34,6 +34,7 @@ const About = () => {
     <section
       ref={aboutSectionRef}
       name='about'
+      id='about'
       className={`py-20 scroll-pt-24 transition-opacity transition-transform duration-500 ease-in-out ${
         inView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'
       }`}

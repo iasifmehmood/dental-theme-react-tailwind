@@ -9,7 +9,7 @@ const Process = () => {
 
   // Function to handle scroll event
   const handleScroll = () => {
-    const section = document.getElementById('process-section');
+    const section = document.getElementById('process');
     if (section) {
       const sectionTop = section.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
@@ -33,7 +33,7 @@ const Process = () => {
 
   return (
     <section
-      id='process-section'
+      id='process'
       className={`py-20 bg-light-bg transition-opacity duration-500 ${
         inView ? 'opacity-100' : 'opacity-0'
       }`}

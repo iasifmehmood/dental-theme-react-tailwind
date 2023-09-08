@@ -51,6 +51,7 @@ const Services = () => {
     <section
       ref={servicesSectionRef}
       name='services'
+      id='service'
       className='py-20 bg-white-bg scroll-pt-24 transition-opacity transition-transform duration-500 ease-in-out opacity-0 -translate-y-20'
     >
       <div className='max-w-[1200px] mx-auto px-4'>

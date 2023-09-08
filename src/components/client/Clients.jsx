@@ -9,7 +9,7 @@ const Clients = () => {
 
   // Function to handle scroll event
   const handleScroll = () => {
-    const section = document.getElementById('clients-section');
+    const section = document.getElementById('review');
     if (section) {
       const sectionTop = section.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
@@ -33,7 +33,7 @@ const Clients = () => {
 
   return (
     <section
-      id='clients-section'
+      id='review'
       name='reviews'
       className={`py-20 bg-white-bg transition-opacity duration-500 ${
         inView ? 'opacity-100' : 'opacity-0'

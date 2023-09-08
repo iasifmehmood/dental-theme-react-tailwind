@@ -39,7 +39,7 @@ const Navbar = () => {
         <NavHead />
         <nav className='flex justify-between items-center max-w-[1200px] mx-auto px-5 h-16'>
           <Link
-            to='home'
+            to='/'
             smooth={true}
             duration={500}
             className='z-10 cursor-pointer'
@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className='hidden md:flex'>
             <ul className='flex space-x-8'>
               {navLinksData.map((item, index) => (
-                <NavLinks item={item} key={index} handleNav={handleNav} />
+                <NavLinks key={index} path={item.path} name={item.name} />
               ))}
             </ul>
           </div>

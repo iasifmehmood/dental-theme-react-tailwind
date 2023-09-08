@@ -1,18 +1,10 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const NavLinks = ({ item: { name, path }, handleNav }) => {
+const NavLinks = ({ path, name }) => {
   return (
-    <li className="cursor-pointer text-white md:text-black text-xl md:text-base hover:text-blue font-medium">
-      <Link
-        to={path}
-        offset={-40}
-        smooth={true}
-        duration={500}
-        onClick={handleNav}
-      >
-        {name}
-      </Link>
+    <li className='cursor-pointer text-white md:text-black text-xl md:text-base hover:text-blue font-medium'>
+      <NavLink to={path}>{name}</NavLink>
     </li>
   );
 };
