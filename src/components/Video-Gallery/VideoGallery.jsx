@@ -3,7 +3,7 @@ import Heading from '../Heading';
 
 const VideoGallery = () => {
   return (
-    <section name='video-gallery' className='mt-14 py-20 ' id='video'>
+    <section name='video-gallery' className='mt-10 py-24 ' id='video'>
       <div className='max-w-[1200px] mx-auto px-4 '>
         <Heading title='Video Gallery' center={true} />
         <div className='text-center flex justify-center flex-wrap sm:flex-nowrap'>

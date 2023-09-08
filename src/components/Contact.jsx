@@ -3,7 +3,7 @@ import Heading from './Heading';
 
 const Contact = () => {
   return (
-    <section name='contact' className='mt-14 py-20 ' id='contact'>
+    <section name='contact' className='mt-10 py-24 ' id='contact'>
       <div className='max-w-[1200px] mx-auto px-4'>
         <Heading title='make appointment' />
         <div className='bg-light-bg p-6 max-w-[30rem] mx-auto rounded'>
