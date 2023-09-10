@@ -22,36 +22,44 @@ import {
 // NavLink Data
 export const navLinksData = [
   {
+    id: 1,
     name: 'Home',
     path: '/',
   },
   {
+    id: 2,
     name: 'Our Mission',
     path: '/#mission',
   },
   {
+    id: 3,
     name: 'About',
     path: '/#about',
   },
 
   {
+    id: 4,
     name: 'Team',
     path: '/#team',
   },
   {
+    id: 5,
     name: 'Services',
     path: '/#service',
   },
   {
+    id: 6,
     name: 'Reviews',
     path: '/#review',
   },
 
   {
+    id: 7,
     name: 'Video Gallery',
     path: 'video-gallery',
   },
   {
+    id: 8,
     name: 'Contact',
     path: 'contact',
   },

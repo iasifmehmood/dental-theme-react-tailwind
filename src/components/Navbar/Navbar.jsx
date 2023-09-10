@@ -49,7 +49,11 @@ const Navbar = () => {
                 nav ? 'text-white' : 'text-black'
               }`}
             > */}
-            <h1 className={`text-2xl lg:text-3xl `}>
+            <h1
+              className={`text-2xl lg:text-3xl ${
+                nav ? 'text-white' : 'text-black'
+              } `}
+            >
               First Stop<span className='text-blue'> Dental</span>
             </h1>
           </Link>
