@@ -49,14 +49,20 @@ const Navbar = () => {
                 nav ? 'text-white' : 'text-black'
               }`}
             > */}
-            <h1
+            {/* <h1
               className={`text-2xl lg:text-3xl ${
                 nav ? 'text-white' : 'text-black'
               } `}
+            > */}
+            <h1
+              className={`text-2xl lg:text-3xl ${
+                nav ? 'text-white' : 'text-black'
+              } md:text-base`}
             >
               First Stop<span className='text-blue'> Dental</span>
             </h1>
           </Link>
+
           <div className='hidden md:flex'>
             <ul className='flex space-x-8'>
               {navLinksData.map((item, index) => (
