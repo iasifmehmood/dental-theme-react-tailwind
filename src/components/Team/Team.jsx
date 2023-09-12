@@ -40,7 +40,7 @@ const Team = () => {
       }`}
     >
       <div className='max-w-[1200px] mx-auto px-4'>
-        <Heading title='Our Team' />
+        {/* <Heading title='Our Team' /> */}
         <TeamItems TeamData={TeamData} />
       </div>
     </section>
