@@ -237,12 +237,13 @@ function TeamItems() {
           depth: 100,
           modifier: 2.5,
         }}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
+        // pagination={{ el: '.swiper-pagination', clickable: true }}
         navigation={{
-          nextEl: '.swiper-button-next', // Next button
-          prevEl: '.swiper-button-prev', // Previous button
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
           clickable: true,
         }}
+        mousewheel={true} // Enable mouse slide navigation
         modules={[EffectCoverflow, Pagination, Navigation]}
         className='swiper_container'
       >
@@ -264,9 +265,10 @@ function TeamItems() {
         <SwiperSlide>
           <img src={slide_image_6} alt='slide_image' />
         </SwiperSlide>
+
         <div className='swiper-pagination'></div>
-        <div className='swiper-button-next'></div> {/* Next button */}
-        <div className='swiper-button-prev'></div> {/* Previous button */}
+        <div className='swiper-button-next'></div>
+        <div className='swiper-button-prev'></div>
       </Swiper>
     </div>
   );
