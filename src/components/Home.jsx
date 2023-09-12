@@ -1,4 +1,5 @@
 import React from 'react';
+import { lazy, Suspense } from 'react';
 import {
   About,
   Clients,
@@ -8,6 +9,7 @@ import {
   Team,
   Mission,
 } from './index';
+// const Clients = lazy(() => import('./Team/Team'));
 
 function Home() {
   return (
@@ -19,6 +21,9 @@ function Home() {
       <Services />
       <Process />
       <Clients />
+      {/* <Suspense fallback={<div>Loading...</div>}>
+        <Clients />
+      </Suspense> */}
     </>
   );
 }
