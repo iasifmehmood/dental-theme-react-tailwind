@@ -178,3 +178,14 @@ html {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
+
+/* ... (previous CSS rules) ... */
+
+/* Add a new class for the doctor's name container */
+.doctor-name-container {
+  text-align: center;
+  font-size: 16px;
+  color: #333; /* Adjust the text color to your preference */
+}
+
+/* ... (previous CSS rules) ... */
