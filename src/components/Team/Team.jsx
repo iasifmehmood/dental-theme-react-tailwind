@@ -39,7 +39,8 @@ const Team = () => {
         inView ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      <div className='max-w-[1200px] mx-auto px-4'>
+      {/* className='max-w-[1200px] mx-auto px-4 */}
+      <div className='mx-auto px-4'>
         {/* <Heading title='Our Team' /> */}
         <TeamItems TeamData={TeamData} />
       </div>
